@@ -476,6 +476,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _directive_input_format_directive__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./directive/input-format.directive */ "./src/app/directive/input-format.directive.ts");
 /* harmony import */ var src_app_layout_header_nav_header_nav_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! src/app/layout/header-nav/header-nav.component */ "./src/app/layout/header-nav/header-nav.component.ts");
 /* harmony import */ var _payment_component_payment_payment_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./payment/component/payment/payment.component */ "./src/app/payment/component/payment/payment.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+
 
 
 
@@ -504,7 +506,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _auth_auth_module__WEBPACK_IMPORTED_MODULE_3__["AuthModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
         ],
-        providers: [_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_2__["ServerRequestService"], src_app_shared_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"]],
+        providers: [_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_2__["ServerRequestService"], src_app_shared_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"], [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_14__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_14__["HashLocationStrategy"] }]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
     })
 ], AppModule);
