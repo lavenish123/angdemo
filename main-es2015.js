@@ -48,6 +48,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/buycourse/buycourse.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/buycourse/buycourse.component.html ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row\">\n  <div class=\"col-md-8 mx-auto\">\n    <div style=\"text-align: center\" [style.display]=\"isActive ? 'block':'none'\">\n      <img width=\"100\" src=\"http://www.theappguruz.com/public/assets/admin/images/loaders/p10.gif\" />\n    </div>\n    <br />\n    <br />\n    <div class=\"card\" [style.display]=\"formActive ? 'block':'none'\">\n      <div class=\"card-header\">\n        <h2 class=\"form-signin-heading\">Buy Product</h2>\n      </div>\n      <div class=\"card-body\" >\n        <form #customer=\"ngForm\" (ngSubmit)=\"customer.form.valid && createCutomer(customer)\" novalidate>\n\n\n          <!-- <div class=\"alert\" [hidden]=\"!messageInfo\"  \n                  [class.alert-success]=\"formSuccess\"  \n                  [class.alert-danger]=\"formError\">\n                  <strong>{{MessageType}}</strong> {{messageInfo}}\n              </div> -->\n\n\n\n          <div class=\"row\">\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"firstName\">Name</label>\n                <input required=\"required\" [pattern]=\"regex.alphaRegex\" [(ngModel)]=\"cutomerForm.firstName\"\n                  name=\"firstName\" #firstName='ngModel'\n                  [ngClass]=\"!firstName.valid &&  (firstName.touched || customer.submitted) ? 'input-error' : '' \"\n                  id=\"firstName\" class=\"form-control\" type=\"text\" placeholder=\"firstName\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!firstName.valid && (firstName.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"firstName.errors.required\">\n                    firstName is required\n                  </div>\n                  <div class=\"inputerror\" *ngIf=\"firstName.errors.pattern\">\n                    firstName doesn't match the pattern\n                  </div>\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"lastName\">last Name</label>\n                <input required=\"required\" [pattern]=\"regex.alphaRegex\" [(ngModel)]=\"cutomerForm.lastName\"\n                  name=\"lastName\" #lastName='ngModel'\n                  [ngClass]=\"!lastName.valid &&  (lastName.touched || customer.submitted) ? 'input-error' : '' \"\n                  id=\"lastName\" class=\"form-control\" type=\"text\" placeholder=\"Last Name\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!lastName.valid && (lastName.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"lastName.errors.required\">\n                    last lastName is required\n                  </div>\n                  <div class=\"inputerror\" *ngIf=\"lastName.errors.pattern\">\n                    last lastName doesn't match the pattern\n                  </div>\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"email\">Email</label>\n                <input required=\"required\" [pattern]=\"regex.email\" [(ngModel)]=\"cutomerForm.email\" name=\"email\"\n                  #email='ngModel'\n                  [ngClass]=\"!email.valid &&  (email.touched || customer.submitted) ? 'input-error' : '' \" id=\"email\"\n                  class=\"form-control\" type=\"email\" placeholder=\"Email\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!email.valid && (email.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"email.errors.required\">\n                    Email is required\n                  </div>\n                  <div class=\"inputerror\" *ngIf=\"email.errors.pattern\">\n                    Email doesn't match the pattern\n                  </div>\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"address\">address</label>\n                <input required=\"required\" [(ngModel)]=\"cutomerForm.address\" name=\"address\" #address='ngModel'\n                  [ngClass]=\"!address.valid &&  (address.touched || customer.submitted) ? 'input-error' : '' \"\n                  id=\"address\" class=\"form-control\" type=\"text\" placeholder=\"Name\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!address.valid && (address.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"address.errors.required\">\n                    address name is required\n                  </div>\n\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n          </div>\n\n          <h4> Card Information</h4>\n\n          <br />\n\n          <div class=\"row\">\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"accountHolderName\">Card Holder Name</label>\n                <input required=\"required\" [pattern]=\"regex.alphaRegex\" [(ngModel)]=\"cutomerForm.accountHolderName\"\n                  name=\"accountHolderName\" #accountHolderName='ngModel'\n                  [ngClass]=\"!accountHolderName.valid &&  (accountHolderName.touched || customer.submitted) ? 'input-error' : '' \"\n                  id=\"accountHolderName\" class=\"form-control\" type=\"text\" placeholder=\"Card Holder Name\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!accountHolderName.valid && (accountHolderName.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"accountHolderName.errors.required\">\n                    Card Holder name is required\n                  </div>\n                  <div class=\"inputerror\" *ngIf=\"accountHolderName.errors.pattern\">\n                    Card Holder name doesn't match the pattern\n                  </div>\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n\n\n\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"accountNumber\">Card Number (4893772401803792)</label>\n                <input required=\"required\" [(ngModel)]=\"cutomerForm.accountNumber\" name=\"accountNumber\"\n                  #accountNumber='ngModel'\n                  [ngClass]=\"!accountNumber.valid &&  (accountNumber.touched || customer.submitted) ? 'input-error' : '' \"\n                  id=\"accountNumber\" class=\"form-control\" type=\"text\" placeholder=\"4893772401803792\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!accountNumber.valid && (accountNumber.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"accountNumber.errors.required\">\n                    Card Holder name is required\n                  </div>\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n\n\n\n\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"expiryMonth\">Expiry Month</label>\n                <input required=\"required\" [(ngModel)]=\"cutomerForm.expiryMonth\" name=\"expiryMonth\"\n                  #expiryMonth='ngModel'\n                  [ngClass]=\"!expiryMonth.valid &&  (expiryMonth.touched || customer.submitted) ? 'input-error' : '' \"\n                  id=\"expiryMonth\" class=\"form-control\" type=\"text\" placeholder=\"01\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!expiryMonth.valid && (expiryMonth.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"expiryMonth.errors.required\">\n                    Expiry Month is required\n                  </div>\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n\n\n\n\n            <div class=\"col-sm-6\">\n              <div class=\"form-group\">\n                <label for=\"expiryYear\">Expiry Year</label>\n                <input required=\"required\" [(ngModel)]=\"cutomerForm.expiryYear\" name=\"expiryYear\" #expiryYear='ngModel'\n                  [ngClass]=\"!expiryYear.valid &&  (expiryYear.touched || customer.submitted) ? 'input-error' : '' \"\n                  id=\"expiryYear\" class=\"form-control\" type=\"text\" placeholder=\"22\">\n                <!--start-form-error-->\n                <div class=\"form-error alert alert-danger errorcont \"\n                  *ngIf=\"!expiryYear.valid && (expiryYear.touched || (customer.submitted && customer.touched) )\">\n                  <div class=\"inputerror\" *ngIf=\"expiryYear.errors.required\">\n                    expiryYear name is required\n                  </div>\n                </div>\n                <!--end-form-error-->\n              </div>\n              <!--end-form-group -->\n            </div>\n\n          </div>\n\n          <br />\n          <!-- <p>{{customer.value | json}} </p> -->\n          <div class=\"form-group\">\n            <!-- [disabled]=\"!login.valid\" -->\n            <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n          </div>\n        </form>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/invoice-list/invoice-list.component.html":
+/*!***************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/invoice-list/invoice-list.component.html ***!
+  \***************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n<div class=\"row\">\n  <div class=\"col-sm-6\"><h2>Invoice list</h2></div>\n  <div class=\"col-sm-6 text-right\"> \n    <button class=\"btn btn-info\">Total Payment Received = {{totalPaymentReceived}}</button>\n  </div>\n</div>\n\n\n\n<br/>\n\n\n\n\n<table class=\"table table-bordered table-sm\">\n    <thead>\n      <tr class=\"table-active\">\n        <th>Plan Name</th>\n        <th>CustomerId</th>\n        <th>SubscriptionId</th>\n        <!-- <th>documentNumber</th> -->\n        <th>Price</th>\n        <th> Currency</th>\n        <th>Start Date</th>\n      </tr>\n    </thead>\n    <tbody>\n        <tr *ngFor=\"let inList of invoiceList; let i=index\">\n        <td>{{inList.subscriptionName}}</td>\n        <td>{{inList.customerId}}</td>\n        <td>{{inList.subscriptionId}}</td>\n        <!-- <td>{{invoicedata.documentNumber}} </td> -->\n        <td>{{inList.amount.value}} </td>\n        <td>{{inList.amount.currency}} </td>\n        <td>{{inList.date}} </td>\n      </tr>\n    </tbody>\n  </table>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/login/login.component.html":
 /*!*************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/login/login.component.html ***!
@@ -70,7 +96,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n<!-- <button (click)=\"payment()\"> Pay</button> -->\n\n<button (click)=\"pricingPlans()\"> plan</button>\n\n\n<br> <br> <br>\n<h1>Plans </h1>\n<div class=\"row\"> \n<div  class=\"col-sm-4\" *ngFor=\"let plan of planFullData; let i=index\">\n    <div class=\"card\" style=\"width:20rem;margin:20px 0 24px 0\">\n      <img class=\"card-img-top\"\n        src=\"http://mycfo.websitedevelopermelbourne.net.au/wp-content/uploads/2018/10/home-pic.jpg\" alt=\"image\"\n        style=\"width:100%\">\n      <div class=\"card-body\">\n        <h4 class=\"card-title\">{{plan.name | uppercase}}</h4>\n        <p class=\"card-text\">id: {{plan.id}} </p>\n        <p class=\"card-text\">Price: {{plan.amount.currency}} {{plan.amount.value}}</p>\n        <a href=\"javascript:void(0)\" class=\"btn btn-primary\">Buy Now</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n<br> <br> <br>\n<h2>Customer</h2>\n<p>List a customer</p>            \n<table class=\"table\">\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Email</th>\n      <th>Id</th>\n      <td>Plan</td>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let customer of showPlancustomer; let i=index\">\n      <td>{{customer.firstName}} {{customer.lastName}}</td>\n      <td>{{customer.email}}</td>\n      <td>{{customer.id}}</td>\n      <td (click)=\"checkplan(customer.id)\"></td>\n    </tr>\n  </tbody>\n</table>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n<!-- <button (click)=\"payment()\"> Pay</button> -->\n\n<!-- <button (click)=\"pricingPlans()\"> plan</button> -->\n\n\n\n<div class=\"row\">\n    <div class=\"col-sm-6\"><h1>Pricing Plans </h1></div>\n    <div class=\"col-sm-6 text-right\"> \n      <a   routerLink=\"/invoicelist\" class=\"btn btn-info\">Check Total Payment </a>\n    </div>\n  </div>\n\n\n\n\n\n\n\n\n<div style=\"text-align: center\" [style.display]=\"isActive ? 'block':'none'\"> \n    <img  width=\"100\" src=\"http://www.theappguruz.com/public/assets/admin/images/loaders/p10.gif\"/>\n    </div>\n\n<div class=\"row\"> \n<div  class=\"col-sm-5\" *ngFor=\"let plan of planFullData; let i=index\">\n    <div class=\"card\" style=\"width:20rem;margin:20px 0 24px 0\">\n      <img class=\"card-img-top\"\n        src=\"http://mycfo.websitedevelopermelbourne.net.au/wp-content/uploads/2018/10/home-pic.jpg\" alt=\"image\"\n        style=\"width:100%\">\n      <div class=\"card-body\">\n        <h4 class=\"card-title\">{{plan.name | uppercase}}</h4>\n        <p class=\"card-text\">Plan Id: {{plan.id}} </p>\n        <p class=\"card-text\">Price: {{plan.amount.currency}} {{plan.amount.value}}</p>\n        <a    routerLink=\"/buycourse\"  [queryParams]=\"{plan:plan.id,amount:plan.amount.value}\"  class=\"btn btn-primary\">Buy Now</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n<!-- <br> <br> <br>\n<h2>Customer</h2>\n<p>List a customer </p>            \n<table class=\"table\">\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Email</th>\n      <th>Id</th>\n      <td>Plan Name</td>\n      <td>Start Date</td>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let customer of showPlancustomer; let i=index\">\n      <td>{{customer.firstName}} {{customer.lastName}}</td>\n      <td>{{customer.email}}</td>\n      <td>{{customer.id}}</td>\n      <td>{{customer.name}} </td>\n      <td>{{customer.startDate}} </td>\n    </tr>\n  </tbody>\n</table> -->\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/payment-success/payment-success.component.html":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/payment-success/payment-success.component.html ***!
+  \*********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<br>\n<h2>Payment Status {{paymentStatus}}</h2>\n\n<br><br>\n\n<table class=\"table table-bordered\" style=\"text-align: left\">\n  <thead>\n    <tr class=\"table-active\">\n      <th width=\"30%\">Plan Name</th>\n      <th width=\"35%\">CustomerId</th>\n      <th>SubscriptionId</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>{{invoicedata.subscriptionName}}</td>\n      <td>{{invoicedata.customerId}}</td>\n      <td>{{invoicedata.subscriptionId}}</td>\n    </tr>\n  </tbody>\n</table>\n\n<br> <br>\n\n<table class=\"table table-bordered\">\n  <thead>\n    <tr class=\"table-success\">\n      <th width=\"30%\">Amount Value</th>\n      <th width=\"35%\">Amount Currency</th>\n      <th>Start Date</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>{{invoicedata.value}} </td>\n      <td>{{invoicedata.currency}} </td>\n      <td>{{invoicedata.date}} </td>\n    </tr>\n  </tbody>\n</table>\n");
 
 /***/ }),
 
@@ -109,7 +148,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-header\">\n  <div class=\"container\">\n    <div class=\"topnav\">\n      <nav class=\"navbar navbar-expand-lg navbar-light\">\n        <a routerLink=\"/\" class=\"navbar-brand\">\n          <img width=\"130\" src=\"https://assets.ajio.com/static/img/Ajio-Logo.svg\" alt=\"Ajio\">\n        </a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n          aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\n\n          <div class=\"authnav\">\n            <ul>\n\n                \n\n              <li class=\"nav-item\" >\n                <a class=\"nav-link\" (click)=\"registerModal(registerForm)\"> Register</a>\n              </li>\n\n              <li *ngIf=\"!authService.isLoggedIn()\" class=\"nav-item\" routerLinkActive=\"active current\">\n                <a class=\"nav-link\" routerLink=\"/login\">Login </a>\n              </li>\n\n              <li *ngIf=\"authService.isLoggedIn()\" class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"\" (click)=\"authService.logout()\">\n                  Logout </a>\n              </li>\n\n\n              <li class=\"nav-item\" routerLinkActive=\"active current\">\n                <a class=\"nav-link\" routerLink=\"product\"> Customer Care</a>\n              </li>\n            </ul>\n          </div>\n\n\n\n          <ul class=\"navbar-nav ml-auto\">\n            <li class=\"nav-item\" routerLinkActive=\"active current\">\n              <a class=\"nav-link\" routerLink=\"/\">Home</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active current\">\n              <a class=\"nav-link\" routerLink=\"product\">Product</a>\n            </li>\n\n            <li class=\"nav-item cartdrop\" routerLinkActive=\"active current\">\n              <a class=\"nav-link\" routerLink=\"product\"><i class=\"fa fa-shopping-cart\" aria-hidden=\"true\"></i></a>\n\n              <div class=\"dropcart\">\n                  <div class=\"setcart\" *ngFor=\"let post of productService.buyItem(); let i=index\">\n                    <div class=\"row\">\n                      <div class=\"col-sm-5\"> \n                        <img class=\"img-thumbnail\" [src]=\"post.imgUrl\"> \n                      </div>\n                      <div class=\"col-sm-7\">\n                        <div class=\"carttitle\"> {{post.title}} </div>\n                        <div class=\"cratprice\">Rs  <span>{{post.price}}</span> </div>\n                        <div class=\"cartqut\"> Qty  <span>{{post.quantity}}</span> </div>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n\n\n            </li>\n\n\n\n          </ul>\n\n        </div>\n\n      </nav>\n    </div>\n  </div>\n</div>\n\n<div class=\"headerspace\"> </div>\n\n\n<button (click)=\"formOpen(loginForm,registerForm)\">  hhhhhh </button>\n\n\n\n<ng-template #registerForm let-modal>\n    <div class=\"modal-header\">\n      <h4 class=\"modal-title\" id=\"modal-basic-title\">Profile update</h4>\n      <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss(registerForm)\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n    <div class=\"modal-body\">\n        <app-register> </app-register>\n\n      <button (click)=\"loginModal(loginForm,registerForm)\"> Login </button>\n\n\n    </div>\n    <div class=\"modal-footer\">\n      <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"modal.close('Save click')\">Save</button>\n    </div>\n</ng-template>\n  \n\n\n\n<ng-template #loginForm let-modal>\n    <div class=\"modal-header\">\n      <h4 class=\"modal-title\" id=\"modal-basic-title\">Profile update</h4>\n      <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss(resultloginForm)\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n    <div class=\"modal-body\">\n        <app-login> </app-login>\n    </div>\n    <div class=\"modal-footer\">\n      <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"modal.close('Save click')\">Save</button>\n    </div>\n</ng-template>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-header\">\n  <div class=\"container\">\n    <div class=\"topnav\">\n      <nav class=\"navbar navbar-expand-lg navbar-light\">\n        <a routerLink=\"/\" class=\"navbar-brand\">\n          <img width=\"130\" src=\"http://mycfo.websitedevelopermelbourne.net.au/wp-content/themes/mycfo/images/logo.png\" alt=\"Ajio\">\n        </a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n          aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\n\n          <!-- <div class=\"authnav\">\n            <ul>\n\n                \n\n              <li class=\"nav-item\" >\n                <a class=\"nav-link\" (click)=\"registerModal(registerForm)\"> Register</a>\n              </li>\n\n              <li *ngIf=\"!authService.isLoggedIn()\" class=\"nav-item\" routerLinkActive=\"active current\">\n                <a class=\"nav-link\" routerLink=\"/login\">Login </a>\n              </li>\n\n              <li *ngIf=\"authService.isLoggedIn()\" class=\"nav-item\">\n                <a class=\"nav-link\" routerLink=\"\" (click)=\"authService.logout()\">\n                  Logout </a>\n              </li>\n\n\n              <li class=\"nav-item\" routerLinkActive=\"active current\">\n                <a class=\"nav-link\" routerLink=\"product\"> Customer Care</a>\n              </li>\n            </ul>\n          </div> -->\n\n\n\n          <ul class=\"navbar-nav ml-auto\">\n\n              <li class=\"nav-item\" routerLinkActive=\"active current\">\n                  <a class=\"nav-link\" routerLink=\"/\">Pay</a>\n                </li>\n\n            <!-- <li class=\"nav-item\" routerLinkActive=\"active current\">\n              <a class=\"nav-link\" routerLink=\"/\">Home</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active current\">\n              <a class=\"nav-link\" routerLink=\"product\">Product</a>\n            </li> -->\n\n            <!-- <li class=\"nav-item cartdrop\" routerLinkActive=\"active current\">\n              <a class=\"nav-link\" routerLink=\"product\"><i class=\"fa fa-shopping-cart\" aria-hidden=\"true\"></i></a>\n\n              <div class=\"dropcart\">\n                  <div class=\"setcart\" *ngFor=\"let post of productService.buyItem(); let i=index\">\n                    <div class=\"row\">\n                      <div class=\"col-sm-5\"> \n                        <img class=\"img-thumbnail\" [src]=\"post.imgUrl\"> \n                      </div>\n                      <div class=\"col-sm-7\">\n                        <div class=\"carttitle\"> {{post.title}} </div>\n                        <div class=\"cratprice\">Rs  <span>{{post.price}}</span> </div>\n                        <div class=\"cartqut\"> Qty  <span>{{post.quantity}}</span> </div>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n\n\n            </li> -->\n\n\n\n          </ul>\n\n        </div>\n\n      </nav>\n    </div>\n  </div>\n</div>\n\n<div class=\"headerspace\"> </div>\n\n\n<!-- <button (click)=\"formOpen(loginForm,registerForm)\">  hhhhhh </button> -->\n\n\n\n<ng-template #registerForm let-modal>\n    <div class=\"modal-header\">\n      <h4 class=\"modal-title\" id=\"modal-basic-title\">Profile update</h4>\n      <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss(registerForm)\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n    <div class=\"modal-body\">\n        <app-register> </app-register>\n\n      <button (click)=\"loginModal(loginForm,registerForm)\"> Login </button>\n\n\n    </div>\n    <div class=\"modal-footer\">\n      <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"modal.close('Save click')\">Save</button>\n    </div>\n</ng-template>\n  \n\n\n\n<ng-template #loginForm let-modal>\n    <div class=\"modal-header\">\n      <h4 class=\"modal-title\" id=\"modal-basic-title\">Profile update</h4>\n      <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss(resultloginForm)\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n    <div class=\"modal-body\">\n        <app-login> </app-login>\n    </div>\n    <div class=\"modal-footer\">\n      <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"modal.close('Save click')\">Save</button>\n    </div>\n</ng-template>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
 /***/ }),
 
@@ -404,7 +443,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const appRoutes = [
-    { path: "", component: _layout_component_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
+    { path: "home", component: _layout_component_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'product', loadChildren: './product/product.module#ProductModule' },
     { path: 'no-access', component: _shared_component_no_access_no_access_component__WEBPACK_IMPORTED_MODULE_4__["NoAccessComponent"] },
     { path: '**', component: _shared_component_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_5__["PageNotFoundComponent"] }
@@ -506,7 +545,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _auth_auth_module__WEBPACK_IMPORTED_MODULE_3__["AuthModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
         ],
-        providers: [_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_2__["ServerRequestService"], src_app_shared_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"], [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_14__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_14__["HashLocationStrategy"] }]],
+        providers: [_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_2__["ServerRequestService"], src_app_shared_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"],
+            [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_14__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_14__["HashLocationStrategy"] }]
+        ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
     })
 ], AppModule);
@@ -526,11 +567,17 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthRoutingModule", function() { return AuthRoutingModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _component_pay_pay_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/pay/pay.component */ "./src/app/auth/component/pay/pay.component.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _component_login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./component/login/login.component */ "./src/app/auth/component/login/login.component.ts");
-/* harmony import */ var _component_register_register_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/register/register.component */ "./src/app/auth/component/register/register.component.ts");
+/* harmony import */ var _component_invoice_list_invoice_list_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/invoice-list/invoice-list.component */ "./src/app/auth/component/invoice-list/invoice-list.component.ts");
+/* harmony import */ var _component_payment_success_payment_success_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/payment-success/payment-success.component */ "./src/app/auth/component/payment-success/payment-success.component.ts");
+/* harmony import */ var _component_buycourse_buycourse_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/buycourse/buycourse.component */ "./src/app/auth/component/buycourse/buycourse.component.ts");
+/* harmony import */ var _component_pay_pay_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./component/pay/pay.component */ "./src/app/auth/component/pay/pay.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _component_login_login_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/login/login.component */ "./src/app/auth/component/login/login.component.ts");
+/* harmony import */ var _component_register_register_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./component/register/register.component */ "./src/app/auth/component/register/register.component.ts");
+
+
+
 
 
 
@@ -538,15 +585,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const appRoutes = [
-    { path: "login", component: _component_login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"] },
-    { path: "register", component: _component_register_register_component__WEBPACK_IMPORTED_MODULE_5__["RegisterComponent"] },
-    { path: "pay", component: _component_pay_pay_component__WEBPACK_IMPORTED_MODULE_1__["PayComponent"] }
+    { path: "login", component: _component_login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"] },
+    { path: "register", component: _component_register_register_component__WEBPACK_IMPORTED_MODULE_8__["RegisterComponent"] },
+    { path: "", component: _component_pay_pay_component__WEBPACK_IMPORTED_MODULE_4__["PayComponent"] },
+    { path: "buycourse", component: _component_buycourse_buycourse_component__WEBPACK_IMPORTED_MODULE_3__["BuycourseComponent"] },
+    { path: "paymentsuccess", component: _component_payment_success_payment_success_component__WEBPACK_IMPORTED_MODULE_2__["PaymentSuccessComponent"] },
+    { path: "invoicelist", component: _component_invoice_list_invoice_list_component__WEBPACK_IMPORTED_MODULE_1__["InvoiceListComponent"] }
 ];
 let AuthRoutingModule = class AuthRoutingModule {
 };
 AuthRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(appRoutes)],
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_5__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"].forChild(appRoutes)],
         exports: []
     })
 ], AuthRoutingModule);
@@ -572,6 +622,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./component/login/login.component */ "./src/app/auth/component/login/login.component.ts");
 /* harmony import */ var _component_register_register_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/register/register.component */ "./src/app/auth/component/register/register.component.ts");
 /* harmony import */ var _component_pay_pay_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/pay/pay.component */ "./src/app/auth/component/pay/pay.component.ts");
+/* harmony import */ var _component_buycourse_buycourse_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/buycourse/buycourse.component */ "./src/app/auth/component/buycourse/buycourse.component.ts");
+/* harmony import */ var _component_payment_success_payment_success_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./component/payment-success/payment-success.component */ "./src/app/auth/component/payment-success/payment-success.component.ts");
+/* harmony import */ var _component_invoice_list_invoice_list_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./component/invoice-list/invoice-list.component */ "./src/app/auth/component/invoice-list/invoice-list.component.ts");
+
+
+
 
 
 
@@ -583,7 +639,7 @@ let AuthModule = class AuthModule {
 };
 AuthModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-        declarations: [_component_login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"], _component_register_register_component__WEBPACK_IMPORTED_MODULE_5__["RegisterComponent"], _component_pay_pay_component__WEBPACK_IMPORTED_MODULE_6__["PayComponent"]],
+        declarations: [_component_login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"], _component_register_register_component__WEBPACK_IMPORTED_MODULE_5__["RegisterComponent"], _component_pay_pay_component__WEBPACK_IMPORTED_MODULE_6__["PayComponent"], _component_buycourse_buycourse_component__WEBPACK_IMPORTED_MODULE_7__["BuycourseComponent"], _component_payment_success_payment_success_component__WEBPACK_IMPORTED_MODULE_8__["PaymentSuccessComponent"], _component_invoice_list_invoice_list_component__WEBPACK_IMPORTED_MODULE_9__["InvoiceListComponent"]],
         imports: [
             _auth_routing_module__WEBPACK_IMPORTED_MODULE_1__["AuthRoutingModule"],
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]
@@ -592,6 +648,229 @@ AuthModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         providers: [],
     })
 ], AuthModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth/component/buycourse/buycourse.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/auth/component/buycourse/buycourse.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: BuycourseComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuycourseComponent", function() { return BuycourseComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_shared_services_regex_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/services/regex.service */ "./src/app/shared/services/regex.service.ts");
+/* harmony import */ var src_app_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/services/server-request.service */ "./src/app/shared/services/server-request.service.ts");
+
+
+
+
+
+
+let BuycourseComponent = class BuycourseComponent {
+    constructor(regexService, activatedRoute, serverRequest, router) {
+        this.regexService = regexService;
+        this.activatedRoute = activatedRoute;
+        this.serverRequest = serverRequest;
+        this.router = router;
+        this.formActive = true;
+        this.isActive = false;
+        this.cutomerForm = {
+            firstName: '',
+            lastName: '',
+            email: '',
+            address: '',
+            cName: '',
+            cNumber: '',
+            expiryMonth: '',
+            expiryYear: '',
+            accountHolderName: '',
+            accountNumber: '',
+            countryCode: 'AU',
+            termAndConditionAgreed: 'true'
+        };
+        this.regex = {
+            alpha: regexService.alphaRegex, email: regexService.emailRegex, pwd: regexService.pwdRegex,
+            number: regexService.numberRegex, zip: regexService.zipRegex
+        };
+    }
+    ngOnInit() {
+        //this.Subscriptions();
+        this.activatedRoute.queryParamMap
+            .subscribe(params => {
+            // console.log('params',params);
+            this.planId = params.get('plan');
+            this.amount = params.get('amount');
+            console.log('amount', this.amount);
+        });
+    }
+    createCutomer(newCourse) {
+        console.log('newCourse', newCourse.form.value);
+        console.log('this.cutomerForm', this.cutomerForm);
+        let newCustomer = {
+            firstName: this.cutomerForm.firstName,
+            lastName: this.cutomerForm.lastName,
+            email: this.cutomerForm.email,
+            address1: this.cutomerForm.address
+        };
+        console.log('newCustomer', newCustomer);
+        this.formActive = false;
+        this.isActive = true;
+        this.serverRequest.createCustomerService('https://api-sandbox.ezypay.com/v2/billing/customers', newCustomer)
+            .subscribe(res => {
+            this.customer_Id = res;
+            this.customer_Id = this.customer_Id.id;
+            console.log('res', res);
+            if (res) {
+                this.carddetail = {
+                    accountHolderName: this.cutomerForm.accountHolderName,
+                    accountNumber: this.cutomerForm.accountNumber,
+                    expiryYear: this.cutomerForm.expiryYear,
+                    expiryMonth: this.cutomerForm.expiryMonth,
+                    countryCode: this.cutomerForm.countryCode,
+                    termAndConditionAgreed: this.cutomerForm.termAndConditionAgreed
+                };
+                this.vaultPayment(this.carddetail, this.customer_Id);
+            }
+            else {
+                this.formActive = true;
+                this.isActive = false;
+            }
+        });
+    }
+    //=======================================================
+    vaultPayment(cardDetail, customerId) {
+        console.log('cardDetail', cardDetail);
+        const body = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]();
+        this.serverRequest.vaultCard('https://vault-sandbox.ezypay.com/v2/vault/paymentmethodtokens/card', cardDetail)
+            .subscribe(res => {
+            if (!res) {
+                this.formActive = true;
+                this.isActive = false;
+            }
+            console.log('customerId', customerId);
+            this.Subscriptions(customerId);
+            // this.vaultPay = res;
+            // this.vaultPay = this.vaultPay.paymentMethodToken;
+        });
+    }
+    // Subscriptions() {
+    // paymentMethodToken: "a3381868-810f-4feb-98e1-43fdd232f1f1"
+    // customerId: "db1d6b3f-8613-48fd-bf1c-2008a37cb125"
+    // planId = 672448b9-9607-4e7d-8a9b-1b6573075e72
+    // "customerId":"55220ffc-bc5a-4f50-adaf-fa58c061ebd1",
+    // "planId":"8ff2e3ea-aaa9-4978-8e2a-319d67e8f302",
+    // "paymentMethodToken":"8dbf38bf-81c6-40d6-be1f-6aa80736d5bb",
+    // amount.currency
+    // amount.value
+    // "startDate":"2019-03-11"
+    //}
+    Subscriptions(customerId) {
+        var ausdate = new Date().toLocaleDateString("AUS", { timeZone: "Australia/sydney" });
+        var resDate = ausdate.split("/");
+        let today = resDate[2] + '-' + resDate[0] + '-' + resDate[1];
+        console.log('todayy', today);
+        let carddetail = {
+            "customerId": customerId,
+            "planId": this.planId,
+            "amount": {
+                "currency": "AUD",
+                "value": parseInt(this.amount)
+            },
+            "accountingCode": null,
+            "billingEndValue": null,
+            "startDate": today
+        };
+        this.serverRequest.SubscriptionsPlan('https://api-sandbox.ezypay.com/v2/billing/subscriptions', carddetail)
+            .subscribe(res => {
+            console.log(res);
+            if (res) {
+                this.router.navigate(['/paymentsuccess'], { queryParams: { customerId: customerId } });
+            }
+            else {
+                this.formActive = true;
+                this.isActive = false;
+            }
+        });
+    }
+};
+BuycourseComponent.ctorParameters = () => [
+    { type: src_app_shared_services_regex_service__WEBPACK_IMPORTED_MODULE_4__["RegexService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+    { type: src_app_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_5__["ServerRequestService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+BuycourseComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-buycourse',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./buycourse.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/buycourse/buycourse.component.html")).default
+    })
+], BuycourseComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth/component/invoice-list/invoice-list.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/auth/component/invoice-list/invoice-list.component.ts ***!
+  \***********************************************************************/
+/*! exports provided: InvoiceListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InvoiceListComponent", function() { return InvoiceListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/services/server-request.service */ "./src/app/shared/services/server-request.service.ts");
+
+
+
+
+let InvoiceListComponent = class InvoiceListComponent {
+    constructor(activatedRoute, serverRequest) {
+        this.activatedRoute = activatedRoute;
+        this.serverRequest = serverRequest;
+        this.totalPaymentReceived = 0;
+    }
+    ngOnInit() {
+        this.invoicesList();
+    }
+    invoicesList() {
+        this.serverRequest.invoices('https://api-sandbox.ezypay.com/v2/billing/invoices?limit=50')
+            .subscribe(res => {
+            if (res) {
+                this.invoiceList = res;
+                this.invoiceList = this.invoiceList.data;
+                console.log(' this.invoiceList', this.invoiceList);
+                for (let i = 0; i < this.invoiceList.length; i++) {
+                    this.totalPaymentReceived += this.invoiceList[i].amount.value;
+                }
+                console.log('totalPaymentReceived', this.totalPaymentReceived);
+            }
+        });
+    }
+};
+InvoiceListComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] },
+    { type: src_app_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_3__["ServerRequestService"] }
+];
+InvoiceListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-invoice-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./invoice-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/invoice-list/invoice-list.component.html")).default
+    })
+], InvoiceListComponent);
 
 
 
@@ -692,7 +971,7 @@ let PayComponent = class PayComponent {
     constructor(serverRequest) {
         this.serverRequest = serverRequest;
         this.url = 'https://identity-sandbox.ezypay.com/token';
-        this.showPlancustomer = [];
+        this.isActive = true;
     }
     ngOnInit() {
         //  this.plan();
@@ -760,81 +1039,77 @@ let PayComponent = class PayComponent {
             if (res && this.mainToken.access_token) {
                 localStorage.setItem('ezypayToken', this.mainToken.access_token);
                 this.pricingPlans();
-                this.AllCustomer();
+                // this.AllCustomer()
+                // this.Subscriptions();
                 return true;
             }
         });
     }
-    Subscriptions(paymentMethodToken) {
-        //   let carddetail = {
-        //     "customerId":"f30dc436-9979-4476-81db-ca9a895769f6",
-        //     "planId":"242cc0d9-88cb-4b81-8b89-12e16cecf084",
-        //     "paymentMethodToken":paymentMethodToken,
-        //     "amount": {
-        //       "currency": "AUD",
-        //       "value": 200,
-        //       "type": "CARD"
-        //   },
-        //   "firstBillingAmount": {
-        //     "currency": "AUD",
-        //     "value": 200,
-        // },
-        //   "accountingCode":null,
-        //   "billingEndValue":null,
-        //   "startDate":"2019-09-22"
-        // }
-        // this.serverRequest.create3('https://api-sandbox.ezypay.com/v2/billing/subscriptions',carddetail)
-        // .subscribe(res => {
-        //   console.log(res);
-        // });
-    }
+    // Subscriptions(){
+    //     let carddetail = {
+    //       "customerId": "e7900f8a-6ea8-4c83-a4b0-28bed675e19f",
+    //       "planId":"242cc0d9-88cb-4b81-8b89-12e16cecf084",
+    //       "paymentMethodToken":"2d4861bf-3930-43ad-9798-9c65b4998a00",
+    //       "amount": {
+    //         "currency": "AUD",
+    //         "value": 200,
+    //         "type": "CARD"
+    //     },
+    //     "firstBillingAmount": {
+    //       "currency": "AUD",
+    //       "value": 200,
+    //   },
+    //     "accountingCode":null,
+    //     "billingEndValue":null,
+    //     "startDate":"2019-09-22"
+    //   }
+    //   this.serverRequest.SubscriptionsPlan('https://api-sandbox.ezypay.com/v2/billing/subscriptions',carddetail)
+    //   .subscribe(res => {
+    //     console.log(res);
+    //   });
+    //   }
     pricingPlans() {
         this.serverRequest.pricingPlansService('https://api-sandbox.ezypay.com/v2/billing/plans')
             .subscribe(res => {
-            this.planData = res;
-            this.planFullData = this.planData.data;
+            if (res) {
+                this.planData = res;
+                this.planFullData = this.planData.data;
+                this.isActive = false;
+            }
             // console.log(res);
         });
     }
     AllCustomer() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            this.serverRequest.pricingPlansService('https://api-sandbox.ezypay.com/v2/billing/customers')
-                .subscribe(res => {
-                this.AllCustomerData = res;
-                this.AllCustomerList = this.AllCustomerData.data;
-                for (let i = 0; this.AllCustomerList.length > i; i++) {
-                    this.checkplan(this.AllCustomerList[i].id).then(result => {
-                        this.yesPlan = result;
-                        for (let a = 0; this.AllCustomerList.length > a; a++) {
-                            console.log('no', this.AllCustomerList[a].id);
-                            if (this.yesPlan[0].customerId == this.AllCustomerList[a].id) {
-                                for (let b = 0; this.yesPlan.length > b; b++) {
-                                    console.log('b', [b]);
-                                    //this.AllCustomerList[a].push( this.yesPlan[b].name);
-                                    //this.AllCustomerList[a]
-                                    // add Object fileds
-                                    console.log('array', this.AllCustomerList[a]);
-                                }
-                                this.showPlancustomer.push(this.AllCustomerList[a]);
-                                console.log('yes', [a]);
-                            }
-                        }
-                        console.log(`CheckPlan${i}`, this.yesPlan);
-                    });
-                }
-            });
-        });
-    }
-    checkplan(id) {
-        return new Promise((resolve, reject) => {
-            this.serverRequest.pricingPlansService(`https://api-sandbox.ezypay.com/v2/billing/subscriptions?customerId=${id}`)
-                .subscribe(res => {
-                this.DataPlan = res;
-                this.Nameplan = this.DataPlan.data;
-                if (this.DataPlan.paging.totalCount !== 0) {
-                    resolve(this.Nameplan);
-                }
-            });
+            // this.serverRequest.pricingPlansService('https://api-sandbox.ezypay.com/v2/billing/customers')
+            // .subscribe(res => {
+            //   this.AllCustomerData = res;
+            //   this.AllCustomerList= this.AllCustomerData.data;
+            //    for(let i = 0; this.AllCustomerList.length > i; i++ ){
+            //     this.checkplan(this.AllCustomerList[i].id).then( result => {
+            //       this.showPlancustomer  = result;
+            //       console.log('result',result);
+            // this.yesPlan = result;
+            // for(let a = 0; this.AllCustomerList.length > a; a++ )
+            // {
+            //   console.log('no',this.AllCustomerList[a].id);
+            //   if(this.yesPlan[0].customerId == this.AllCustomerList[a].id){
+            //     for(let b = 0; this.yesPlan.length > b; b++ )
+            //     {
+            //       console.log('b',[b]);
+            //       //this.AllCustomerList[a].push( this.yesPlan[b].name);
+            //       //this.AllCustomerList[a]
+            //       // add Object fileds
+            //       console.log('array',this.AllCustomerList[a]);
+            //     }
+            //     this.showPlancustomer.push(this.AllCustomerList[a]);
+            //     console.log('yes',[a]);
+            //   }
+            // }
+            // console.log(`CheckPlan${i}`,this.yesPlan);
+            //   })
+            //   }
+            // });
         });
     }
 };
@@ -848,6 +1123,86 @@ PayComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: ["./pay.component.scss"]
     })
 ], PayComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth/component/payment-success/payment-success.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/auth/component/payment-success/payment-success.component.ts ***!
+  \*****************************************************************************/
+/*! exports provided: PaymentSuccessComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaymentSuccessComponent", function() { return PaymentSuccessComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/services/server-request.service */ "./src/app/shared/services/server-request.service.ts");
+
+
+
+
+let PaymentSuccessComponent = class PaymentSuccessComponent {
+    constructor(activatedRoute, serverRequest) {
+        this.activatedRoute = activatedRoute;
+        this.serverRequest = serverRequest;
+        this.paymentStatus = 'Waiting...';
+        this.invoicedata = {
+            subscriptionName: '',
+            customerId: '',
+            subscriptionId: '',
+            documentNumber: '',
+            value: '',
+            currency: '',
+            date: '',
+        };
+    }
+    ngOnInit() {
+        this.activatedRoute.queryParamMap
+            .subscribe(params => {
+            // console.log('params',params);
+            this.customerId = params.get('customerId');
+            console.log('customerId', this.customerId);
+        });
+        this.invoicesPayment();
+    }
+    invoicesPayment() {
+        this.serverRequest.invoices('https://api-sandbox.ezypay.com/v2/billing/invoices')
+            .subscribe(res => {
+            this.invoiceList = res;
+            this.invoiceList = this.invoiceList.data;
+            if (this.invoiceList) {
+                let index = this.invoiceList.findIndex(x => x.customerId === this.customerId);
+                this.invoiceList = this.invoiceList[index];
+                this.invoicedata = {
+                    subscriptionName: this.invoiceList.subscriptionName,
+                    customerId: this.invoiceList.customerId,
+                    subscriptionId: this.invoiceList.subscriptionId,
+                    documentNumber: this.invoiceList.documentNumber,
+                    value: this.invoiceList.amount.value,
+                    currency: this.invoiceList.amount.currency,
+                    date: this.invoiceList.date,
+                };
+                console.log('this.invoiceList', this.invoiceList);
+                this.paymentStatus = 'Success';
+            }
+        });
+    }
+};
+PaymentSuccessComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] },
+    { type: src_app_shared_services_server_request_service__WEBPACK_IMPORTED_MODULE_3__["ServerRequestService"] }
+];
+PaymentSuccessComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-payment-success',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./payment-success.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/auth/component/payment-success/payment-success.component.html")).default
+    })
+], PaymentSuccessComponent);
 
 
 
@@ -1294,7 +1649,7 @@ class DataService {
     }
     // Get Service===============================================================
     pricingPlansService(endpoint) {
-        console.log(`Bearer ${localStorage.getItem('ezypayToken')}`);
+        //  console.log(`Bearer ${localStorage.getItem('ezypayToken')}`);
         return this.http.get(endpoint, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
@@ -1309,7 +1664,7 @@ class DataService {
         console.log(resource);
         return this.http.post(endpoint, resource, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
-                'Content-Type': 'application/json',
+                //  'Content-Type': 'application/json',
                 'merchant': 'cc4d2aa1-e61c-4ac6-9799-73df99856d0b',
                 'Authorization': `Bearer ${localStorage.getItem('ezypayToken')}`
             }),
@@ -1329,12 +1684,24 @@ class DataService {
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.handleError));
     }
     // Create Service===============================================================
-    create3(endpoint, resource) {
+    SubscriptionsPlan(endpoint, resource) {
         return this.http.post(endpoint, resource, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
                 'merchant': 'cc4d2aa1-e61c-4ac6-9799-73df99856d0b',
-                'Authorization': 'Bearer eyJraWQiOiIzd0dCZkhqcG9jMzM5WElXVzhkQmw5SE5aNnpqTXhmQTFlam9OUEpXYk80IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjV2YVd6VnJPdWxpZFBTcUktMGZqbXdDNF8ySDRmOVBLMWlpUVhTc3ZVRDAuQUJkNUZ1SEhwTkJ0TXpvQW5qOGZRL0huY0pSZ2JoelY3QzljdUlLeGx4UT0iLCJpc3MiOiJodHRwczovL2V6eXBheS5va3RhcHJldmlldy5jb20vb2F1dGgyL2F1c2k4aHJ5ajg1a21hSnlJMGg3IiwiYXVkIjoiZXp5cGF5IiwiaWF0IjoxNTY5MTM3ODQ4LCJleHAiOjE1NjkxNDE3NDgsImNpZCI6IjBvYW1naGF5bnU5MG9oN1pnMGg3IiwidWlkIjoiMDB1bWhwZGRrYmxDSzE2WFcwaDciLCJzY3AiOlsiaW50ZWdyYXRvciIsIm9mZmxpbmVfYWNjZXNzIiwiYmlsbGluZ19wcm9maWxlIiwiY3JlYXRlX3BheW1lbnRfbWV0aG9kIl0sInN1YiI6InByYXNhZEBtbGtncm91cC5jb20uYXUiLCJyb2xlIjpbIkV2ZXJ5b25lIiwiZmM0NmI4NDEtZmZkNS00NDZjLWIwZTEtZWQxN2VkOTEwZGIxIiwiVUkgTG9naW4gRGlzYWJsZWQiLCJVU0VSIl0sIm1lcmNoYW50X2lkIjoiY2M0ZDJhYTEtZTYxYy00YWM2LTk3OTktNzNkZjk5ODU2ZDBiIiwiaW50ZWdyYXRvcl9pZCI6ImZjNDZiODQxLWZmZDUtNDQ2Yy1iMGUxLWVkMTdlZDkxMGRiMSJ9.SIlrcWMuHsK8rJq5WDOsxO6b9LB1kAlVz4qJX2KZHwrRo0sBXQwQg1dKxi9TqFAl9Tm0b7aMuSbBuuSEGrIizFuIlH16ll8-yFmx1W5GCsDf8drrKhrhbVeUpy2VRbuBbbp-ej90GaTdAp-bDlzTre3W4wobmKLyyNhyJLZUlFdx6p31uwY3K5nHQsarDzpKkkFLlo5hy6NuYqQdhNBZsaZw0izeigNCqeCe9sqaJrB_OlhEPLwJ87pumm97_AzKgR_-fu5y-t52xVMKpivJv2BzuJefo81nu3CCemJgjZuQq9e2N9o_7UbKTonq7htgN1lqPFZrk5KshM42IlKwdA'
+                'Authorization': `Bearer ${localStorage.getItem('ezypayToken')}`
+            }),
+        })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.handleError));
+    }
+    // Get Service===============================================================
+    invoices(endpoint) {
+        //  console.log(`Bearer ${localStorage.getItem('ezypayToken')}`);
+        return this.http.get(endpoint, {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+                'merchant': 'cc4d2aa1-e61c-4ac6-9799-73df99856d0b',
+                'Authorization': `Bearer ${localStorage.getItem('ezypayToken')}`
             }),
         })
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.handleError));
@@ -1537,12 +1904,14 @@ ServerRequestService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SharedModule", function() { return SharedModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _pipe_currency_format_pipe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pipe/currency-format.pipe */ "./src/app/shared/pipe/currency-format.pipe.ts");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _pipe_currency_format_pipe__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pipe/currency-format.pipe */ "./src/app/shared/pipe/currency-format.pipe.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
+
 
 
 
@@ -1553,12 +1922,12 @@ __webpack_require__.r(__webpack_exports__);
 let SharedModule = class SharedModule {
 };
 SharedModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-        declarations: [_pipe_currency_format_pipe__WEBPACK_IMPORTED_MODULE_5__["CurrencyFormatPipe"]],
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
+        declarations: [_pipe_currency_format_pipe__WEBPACK_IMPORTED_MODULE_6__["CurrencyFormatPipe"]],
         imports: [
-            _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]
         ],
-        exports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _pipe_currency_format_pipe__WEBPACK_IMPORTED_MODULE_5__["CurrencyFormatPipe"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbModule"]]
+        exports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _pipe_currency_format_pipe__WEBPACK_IMPORTED_MODULE_6__["CurrencyFormatPipe"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__["NgbModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
     })
 ], SharedModule);
 
@@ -1635,7 +2004,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Akshit\Desktop\myProject\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Akshit\Desktop\angular-shopping-latest\src\main.ts */"./src/main.ts");
 
 
 /***/ })
